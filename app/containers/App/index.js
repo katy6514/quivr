@@ -15,7 +15,7 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Layout from 'components/Layout';
 import GlobalStyle from '../../global-styles';
 
-export default function App() {
+function App() {
   return (
     <Layout>
       <Switch>
@@ -26,3 +26,5 @@ export default function App() {
     </Layout>
   );
 }
+
+export default App;

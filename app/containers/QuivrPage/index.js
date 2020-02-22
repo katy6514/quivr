@@ -8,12 +8,14 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
+import QuivrTable from '../../components/QuivrTable';
 
 function QuivrPage() {
   return (
-    <h1>
+    <React.Fragment>
       <FormattedMessage {...messages.header} />
-    </h1>
+      <QuivrTable />
+    </React.Fragment>
   );
 }
 

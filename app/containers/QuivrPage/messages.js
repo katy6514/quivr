@@ -10,6 +10,6 @@ export const scope = 'app.containers.QuivrPage';
 export default defineMessages({
   header: {
     id: `${scope}.header`,
-    defaultMessage: "Here's what's in your quivR",
+    defaultMessage: "Here's what's in your QuivR",
   },
 });
