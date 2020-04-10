@@ -36,7 +36,16 @@ function QuivrTable() {
         </TableHead>
         <TableBody>
           {needles.map(needle => (
-            <TableRow key={needle.type}>
+            <TableRow
+              key={
+                Math.random()
+                  .toString(36)
+                  .substring(2, 15) +
+                Math.random()
+                  .toString(36)
+                  .substring(2, 15)
+              }
+            >
               <TableCell component="th" scope="needle">
                 {needle.type}
               </TableCell>
