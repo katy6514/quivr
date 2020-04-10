@@ -13,7 +13,9 @@ import QuivrTable from '../../components/QuivrTable';
 function QuivrPage() {
   return (
     <React.Fragment>
-      <FormattedMessage {...messages.header} />
+      <h1>
+        <FormattedMessage {...messages.header} />
+      </h1>
       <QuivrTable />
     </React.Fragment>
   );
