@@ -11,6 +11,8 @@ import '@babel/polyfill';
 // Import all the third party stuff
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Axe from 'react-axe';
+
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import history from 'utils/history';
@@ -32,6 +34,10 @@ import configureStore from './configureStore';
 
 // Import i18n messages
 import { translationMessages } from './i18n';
+
+if (process.env.NODE_ENV !== 'production') {
+  Axe(React, ReactDOM, 1000);
+}
 
 // Create redux store with history
 const initialState = {};
