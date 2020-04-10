@@ -30,11 +30,11 @@ function Layout(props) {
       <Drawer open={drawerOpen} onClose={toggleDrawer()}>
         drawer content
       </Drawer>
-      <div>
+      <nav>
         <FormattedMessage {...messages.header} />
         <Button onClick={toggleDrawer()}>Open drawer</Button>
         Toolbar, sidebar, backdrop
-      </div>
+      </nav>
       <main>{props.children}</main>
     </React.Fragment>
   );
